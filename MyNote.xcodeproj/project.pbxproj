@@ -7,37 +7,91 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43009D501C669BE3005C6664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009D4F1C669BE3005C6664 /* AppDelegate.swift */; };
+		43009D521C669BE3005C6664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009D511C669BE3005C6664 /* ViewController.swift */; };
+		43009D551C669BE3005C6664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43009D531C669BE3005C6664 /* Main.storyboard */; };
+		43009D571C669BE3005C6664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43009D561C669BE3005C6664 /* Assets.xcassets */; };
+		43009D5A1C669BE3005C6664 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43009D581C669BE3005C6664 /* LaunchScreen.storyboard */; };
 		43898E3B1C66706D0043BB90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43898E3A1C66706D0043BB90 /* AppDelegate.swift */; };
 		43898E3D1C66706D0043BB90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43898E3C1C66706D0043BB90 /* ViewController.swift */; };
 		43898E401C66706D0043BB90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43898E3E1C66706D0043BB90 /* Main.storyboard */; };
 		43898E421C66706D0043BB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43898E411C66706D0043BB90 /* Assets.xcassets */; };
+		43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E721C667EED0043BB90 /* CoreBluetooth.framework */; };
+		43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E741C667F0B0043BB90 /* SystemConfiguration.framework */; };
+		43898E7A1C6680FC0043BB90 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E791C6680FC0043BB90 /* MyoKit.framework */; };
+		A523D6CCFE5B819C43A855BD /* Pods_MyNotePhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33202939592BCF7DF4EBEB8C /* Pods-MyNotePhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotePhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.release.xcconfig"; sourceTree = "<group>"; };
+		43009D4D1C669BE3005C6664 /* MyNotePhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNotePhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43009D4F1C669BE3005C6664 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43009D511C669BE3005C6664 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43009D541C669BE3005C6664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43009D561C669BE3005C6664 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43009D591C669BE3005C6664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43009D5B1C669BE3005C6664 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43898E371C66706D0043BB90 /* MyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43898E3A1C66706D0043BB90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43898E3C1C66706D0043BB90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43898E3F1C66706D0043BB90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43898E411C66706D0043BB90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43898E431C66706D0043BB90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43898E721C667EED0043BB90 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		43898E741C667F0B0043BB90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		43898E771C667F920043BB90 /* MyNote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		43898E791C6680FC0043BB90 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotePhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.debug.xcconfig"; sourceTree = "<group>"; };
+		E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotePhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		43009D4A1C669BE3005C6664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A523D6CCFE5B819C43A855BD /* Pods_MyNotePhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43898E341C66706D0043BB90 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43898E7A1C6680FC0043BB90 /* MyoKit.framework in Frameworks */,
+				43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */,
+				43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43009D4E1C669BE3005C6664 /* MyNotePhone */ = {
+			isa = PBXGroup;
+			children = (
+				43009D4F1C669BE3005C6664 /* AppDelegate.swift */,
+				43009D511C669BE3005C6664 /* ViewController.swift */,
+				43009D531C669BE3005C6664 /* Main.storyboard */,
+				43009D561C669BE3005C6664 /* Assets.xcassets */,
+				43009D581C669BE3005C6664 /* LaunchScreen.storyboard */,
+				43009D5B1C669BE3005C6664 /* Info.plist */,
+			);
+			path = MyNotePhone;
+			sourceTree = "<group>";
+		};
 		43898E2E1C66706C0043BB90 = {
 			isa = PBXGroup;
 			children = (
+				43898E771C667F920043BB90 /* MyNote-Bridging-Header.h */,
+				43898E791C6680FC0043BB90 /* MyoKit.framework */,
+				43898E741C667F0B0043BB90 /* SystemConfiguration.framework */,
+				43898E721C667EED0043BB90 /* CoreBluetooth.framework */,
 				43898E391C66706D0043BB90 /* MyNote */,
+				43009D4E1C669BE3005C6664 /* MyNotePhone */,
 				43898E381C66706D0043BB90 /* Products */,
+				E3757D338A1713D1E4C930C9 /* Pods */,
+				F0ABC78B38B84CD5B9E748F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				43898E371C66706D0043BB90 /* MyNote.app */,
+				43009D4D1C669BE3005C6664 /* MyNotePhone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +116,46 @@
 			path = MyNote;
 			sourceTree = "<group>";
 		};
+		E3757D338A1713D1E4C930C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */,
+				33202939592BCF7DF4EBEB8C /* Pods-MyNotePhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0ABC78B38B84CD5B9E748F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		43009D4C1C669BE3005C6664 /* MyNotePhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43009D5C1C669BE3005C6664 /* Build configuration list for PBXNativeTarget "MyNotePhone" */;
+			buildPhases = (
+				057A02C07212C2683FFBFF38 /* Check Pods Manifest.lock */,
+				43009D491C669BE3005C6664 /* Sources */,
+				43009D4A1C669BE3005C6664 /* Frameworks */,
+				43009D4B1C669BE3005C6664 /* Resources */,
+				0734168D5545206C95A42FC5 /* Embed Pods Frameworks */,
+				B84890AA8B8E0662873A5A58 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyNotePhone;
+			productName = MyNotePhone;
+			productReference = 43009D4D1C669BE3005C6664 /* MyNotePhone.app */;
+			productType = "com.apple.product-type.application";
+		};
 		43898E361C66706D0043BB90 /* MyNote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43898E461C66706D0043BB90 /* Build configuration list for PBXNativeTarget "MyNote" */;
@@ -91,6 +183,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Jake Saferstein";
 				TargetAttributes = {
+					43009D4C1C669BE3005C6664 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					43898E361C66706D0043BB90 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -110,11 +205,22 @@
 			projectRoot = "";
 			targets = (
 				43898E361C66706D0043BB90 /* MyNote */,
+				43009D4C1C669BE3005C6664 /* MyNotePhone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		43009D4B1C669BE3005C6664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009D5A1C669BE3005C6664 /* LaunchScreen.storyboard in Resources */,
+				43009D571C669BE3005C6664 /* Assets.xcassets in Resources */,
+				43009D551C669BE3005C6664 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43898E351C66706D0043BB90 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,7 +232,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		057A02C07212C2683FFBFF38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0734168D5545206C95A42FC5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84890AA8B8E0662873A5A58 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		43009D491C669BE3005C6664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43009D521C669BE3005C6664 /* ViewController.swift in Sources */,
+				43009D501C669BE3005C6664 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		43898E331C66706D0043BB90 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +302,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		43009D531C669BE3005C6664 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43009D541C669BE3005C6664 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43009D581C669BE3005C6664 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43009D591C669BE3005C6664 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		43898E3E1C66706D0043BB90 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -150,6 +329,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		43009D5D1C669BE3005C6664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyNotePhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNotePhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43009D5E1C669BE3005C6664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33202939592BCF7DF4EBEB8C /* Pods-MyNotePhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = MyNotePhone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNotePhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		43898E441C66706D0043BB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -236,10 +455,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -248,16 +472,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		43009D5C1C669BE3005C6664 /* Build configuration list for PBXNativeTarget "MyNotePhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43009D5D1C669BE3005C6664 /* Debug */,
+				43009D5E1C669BE3005C6664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		43898E321C66706C0043BB90 /* Build configuration list for PBXProject "MyNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -274,6 +512,7 @@
 				43898E481C66706D0043BB90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
