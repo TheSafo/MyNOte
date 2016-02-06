@@ -1,0 +1,6 @@
+framework module VirtualGameController {
+  umbrella header "VirtualGameController-umbrella.h"
+
+  export *
+  module * { export * }
+}

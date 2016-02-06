@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18001FA2611094A9F2844E3DA13D4FC1 /* VgcCentralPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643E9752EF25E84BD318FD8044F7649 /* VgcCentralPublisher.swift */; };
+		1BE27B10DF3CFCDE6058738DA83C442C /* VgcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7621598BC9E6C4B61B16F195C8C4A834 /* VgcController.swift */; };
+		3B25CBD7BFF583FC91B3754AA703BE8D /* VgcCustomMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E0BA38C4AE1F919B09B95EE43D45F /* VgcCustomMappings.swift */; };
+		47C12E27E9E40B1C125D87AB234B9FB5 /* Pods-MyNotePhone-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6985B4A743798ADDD9EAD5536488A74 /* Pods-MyNotePhone-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525D23D438ABDFB6DC5FA73F86740D1D /* VgcManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E8BC75B93FA0BB47A3E86968F7A96A /* VgcManager.swift */; };
+		56EF300B9335614F937AE36C1C9863D6 /* Pods-MyNotePhone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC88C925289C2C1449140AB981D151D2 /* Pods-MyNotePhone-dummy.m */; };
+		60F31C54E1D4CAAEDCBF2CB4548B6207 /* VgcWatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A4F48085CF1CDDC68871E8B9244020 /* VgcWatchConnectivity.swift */; };
+		61D025DD40A63A7EA16636B61AE3D832 /* VgcMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142FAFEA5C587EC303C27D9A6FD74B2F /* VgcMotion.swift */; };
+		6A997985DE7FA7EAB0D08537F60B022C /* VgcLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF03BF2F79603F128BE04CFFE7BBC8F /* VgcLogger.swift */; };
+		8BF2BD5D43B0FD5AE5C93B9511D12171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		8F14000DB9F606DF93809F05715760D2 /* VgcIcadePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F5F4BED76AC9D3B3340B29ED9CF63E /* VgcIcadePeripheral.swift */; };
+		8F49E566C8C6F5B13D2607F8FA607CA2 /* VgcSharedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A90BB35336B7F58C5C97454DD5ACA7 /* VgcSharedViews.swift */; };
+		9BF3B0FF6C794ED9797D8967EB770371 /* VgcElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B13C8B3C1E50BFB9C83D056BE552C2 /* VgcElements.swift */; };
+		A4342783C2CFBA987D7F3E35F93BD8D2 /* VgcWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9324A424ED327A7E5B081AA900146D6 /* VgcWatch.swift */; };
+		ABA592C7B397C027EB0962DB6602CE20 /* VgcPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC25E54CBA847D81242E3F98B10C569 /* VgcPeripheral.swift */; };
+		B622A8805172FA8B4C9271735C8997C9 /* VgcStreamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD7BD259D8783EA1577E87DEB9FDB /* VgcStreamer.swift */; };
+		B68052DC8924E1FF79F7F19418E5BF58 /* VgcBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AEC401982AF16B0EAA63F8DCBC7927 /* VgcBrowser.swift */; };
+		B7D58E29AD4BFF66BF0454C87ABBEDBF /* VgcPeripheralSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669E396E43C67E98AE52CA09314D2D51 /* VgcPeripheralSetup.swift */; };
+		B840D5225E6A878C74654938AF7224B5 /* VirtualGameController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2A38C32CFCEA8993974BBF409F72138 /* VirtualGameController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8595D3A26178F0A0389C36FD6E3CEC3 /* VgcCentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D071F6B2FA87E3265085DB78153F99FB /* VgcCentralViewController.swift */; };
+		D77E83BFCA63E563EE2287BB64B16401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E2FB34874E77988A064F1C14A9E6D692 /* VirtualGameController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E2B0F66E2F7A4F1C1531CB169253AC /* VirtualGameController-dummy.m */; };
+		EFF339255DE5B25FEBB9994C97A1E58D /* VgcCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABDCB4AF5FE20FD21C877FB9A4416FB7 /* VgcCustomElements.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5404B94EA8BA7CE4EB3BB32569B760F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8856C61260D23E4550AFB4E2608F2FD9;
+			remoteInfo = VirtualGameController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DCDFD10FCE4AF6751B06831688D58AB /* Pods-MyNotePhone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MyNotePhone-acknowledgements.markdown"; sourceTree = "<group>"; };
+		142FAFEA5C587EC303C27D9A6FD74B2F /* VgcMotion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcMotion.swift; path = Source/Framework/VgcMotion.swift; sourceTree = "<group>"; };
+		14A4F48085CF1CDDC68871E8B9244020 /* VgcWatchConnectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcWatchConnectivity.swift; path = Source/Framework/VgcWatchConnectivity.swift; sourceTree = "<group>"; };
+		14EE058C05D54DE84813EBF8D38F9A11 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AFA2BD6AE6A3A9C80014E55FFB2536D /* VirtualGameController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = VirtualGameController.modulemap; sourceTree = "<group>"; };
+		239FF4E4A6C39B643B6D390212A9BA4D /* Pods-MyNotePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotePhone.debug.xcconfig"; sourceTree = "<group>"; };
+		3643E9752EF25E84BD318FD8044F7649 /* VgcCentralPublisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcCentralPublisher.swift; path = Source/Framework/VgcCentralPublisher.swift; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		42AEC401982AF16B0EAA63F8DCBC7927 /* VgcBrowser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcBrowser.swift; path = Source/Framework/VgcBrowser.swift; sourceTree = "<group>"; };
+		430591885DD12588A870FBBB3139D58A /* Pods_MyNotePhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotePhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56B13C8B3C1E50BFB9C83D056BE552C2 /* VgcElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcElements.swift; path = Source/Framework/VgcElements.swift; sourceTree = "<group>"; };
+		5AC25E54CBA847D81242E3F98B10C569 /* VgcPeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcPeripheral.swift; path = Source/Framework/VgcPeripheral.swift; sourceTree = "<group>"; };
+		62CBD7BD259D8783EA1577E87DEB9FDB /* VgcStreamer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcStreamer.swift; path = Source/Framework/VgcStreamer.swift; sourceTree = "<group>"; };
+		6599D4826A5DC14550349DAD1506FE2B /* Pods-MyNotePhone.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MyNotePhone.modulemap"; sourceTree = "<group>"; };
+		669E396E43C67E98AE52CA09314D2D51 /* VgcPeripheralSetup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcPeripheralSetup.swift; path = Source/Framework/VgcPeripheralSetup.swift; sourceTree = "<group>"; };
+		6B9F8C786316F9C051726B8CBBFCC141 /* VirtualGameController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirtualGameController-prefix.pch"; sourceTree = "<group>"; };
+		7621598BC9E6C4B61B16F195C8C4A834 /* VgcController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcController.swift; path = Source/Framework/VgcController.swift; sourceTree = "<group>"; };
+		7EF03BF2F79603F128BE04CFFE7BBC8F /* VgcLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcLogger.swift; path = Source/Framework/VgcLogger.swift; sourceTree = "<group>"; };
+		8656CC3A5974FD8B127F43179EC7EBF0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E2B0F66E2F7A4F1C1531CB169253AC /* VirtualGameController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VirtualGameController-dummy.m"; sourceTree = "<group>"; };
+		8F6D3F06007743431B654C9E871A3228 /* VirtualGameController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VirtualGameController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		909859663E0185F4A9EAA3CB21CA8BA3 /* VirtualGameController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VirtualGameController.xcconfig; sourceTree = "<group>"; };
+		A18D8382752890968C2C8E1994359833 /* Pods-MyNotePhone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MyNotePhone-acknowledgements.plist"; sourceTree = "<group>"; };
+		A27E3D53C0BA864B7B4CBB1155D9BA91 /* Pods-MyNotePhone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNotePhone-frameworks.sh"; sourceTree = "<group>"; };
+		A6985B4A743798ADDD9EAD5536488A74 /* Pods-MyNotePhone-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MyNotePhone-umbrella.h"; sourceTree = "<group>"; };
+		A94E0BA38C4AE1F919B09B95EE43D45F /* VgcCustomMappings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcCustomMappings.swift; path = Source/External/VgcCustomMappings.swift; sourceTree = "<group>"; };
+		ABDCB4AF5FE20FD21C877FB9A4416FB7 /* VgcCustomElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcCustomElements.swift; path = Source/External/VgcCustomElements.swift; sourceTree = "<group>"; };
+		AC88C925289C2C1449140AB981D151D2 /* Pods-MyNotePhone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MyNotePhone-dummy.m"; sourceTree = "<group>"; };
+		AE5269E4DE743885385E27F3D0D12EB0 /* Pods-MyNotePhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MyNotePhone.release.xcconfig"; sourceTree = "<group>"; };
+		B0A90BB35336B7F58C5C97454DD5ACA7 /* VgcSharedViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcSharedViews.swift; path = Source/External/VgcSharedViews.swift; sourceTree = "<group>"; };
+		B2A38C32CFCEA8993974BBF409F72138 /* VirtualGameController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VirtualGameController-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4E8BC75B93FA0BB47A3E86968F7A96A /* VgcManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcManager.swift; path = Source/Framework/VgcManager.swift; sourceTree = "<group>"; };
+		D071F6B2FA87E3265085DB78153F99FB /* VgcCentralViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcCentralViewController.swift; path = Source/External/VgcCentralViewController.swift; sourceTree = "<group>"; };
+		D4ED87576F8D9043ADE407020EE3DB58 /* Pods-MyNotePhone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MyNotePhone-resources.sh"; sourceTree = "<group>"; };
+		E1F5F4BED76AC9D3B3340B29ED9CF63E /* VgcIcadePeripheral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcIcadePeripheral.swift; path = Source/Framework/VgcIcadePeripheral.swift; sourceTree = "<group>"; };
+		F9324A424ED327A7E5B081AA900146D6 /* VgcWatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VgcWatch.swift; path = Source/Framework/VgcWatch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D0B0570CE2A4D712FD0EDCC3D45D90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF2BD5D43B0FD5AE5C93B9511D12171 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C9BBFB25CD2817EE8A3E18BCAC9BC1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77E83BFCA63E563EE2287BB64B16401 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		693704453F3E46E72F37F54F7CE627A4 /* VirtualGameController */ = {
+			isa = PBXGroup;
+			children = (
+				42AEC401982AF16B0EAA63F8DCBC7927 /* VgcBrowser.swift */,
+				3643E9752EF25E84BD318FD8044F7649 /* VgcCentralPublisher.swift */,
+				D071F6B2FA87E3265085DB78153F99FB /* VgcCentralViewController.swift */,
+				7621598BC9E6C4B61B16F195C8C4A834 /* VgcController.swift */,
+				ABDCB4AF5FE20FD21C877FB9A4416FB7 /* VgcCustomElements.swift */,
+				A94E0BA38C4AE1F919B09B95EE43D45F /* VgcCustomMappings.swift */,
+				56B13C8B3C1E50BFB9C83D056BE552C2 /* VgcElements.swift */,
+				E1F5F4BED76AC9D3B3340B29ED9CF63E /* VgcIcadePeripheral.swift */,
+				7EF03BF2F79603F128BE04CFFE7BBC8F /* VgcLogger.swift */,
+				C4E8BC75B93FA0BB47A3E86968F7A96A /* VgcManager.swift */,
+				142FAFEA5C587EC303C27D9A6FD74B2F /* VgcMotion.swift */,
+				5AC25E54CBA847D81242E3F98B10C569 /* VgcPeripheral.swift */,
+				669E396E43C67E98AE52CA09314D2D51 /* VgcPeripheralSetup.swift */,
+				B0A90BB35336B7F58C5C97454DD5ACA7 /* VgcSharedViews.swift */,
+				62CBD7BD259D8783EA1577E87DEB9FDB /* VgcStreamer.swift */,
+				F9324A424ED327A7E5B081AA900146D6 /* VgcWatch.swift */,
+				14A4F48085CF1CDDC68871E8B9244020 /* VgcWatchConnectivity.swift */,
+				8C163121A8F6A275B1C6C1B75ED8878D /* Support Files */,
+			);
+			path = VirtualGameController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				AB78E840513010E9CC652844D74BE90D /* Pods */,
+				DC9D3080D00B5F5EA79B0B5139788299 /* Products */,
+				8960471A88F28EE4A9BD56560084F6B9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8960471A88F28EE4A9BD56560084F6B9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9323738A863F46B174BE3EA5EBD5D73 /* Pods-MyNotePhone */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8C163121A8F6A275B1C6C1B75ED8878D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14EE058C05D54DE84813EBF8D38F9A11 /* Info.plist */,
+				1AFA2BD6AE6A3A9C80014E55FFB2536D /* VirtualGameController.modulemap */,
+				909859663E0185F4A9EAA3CB21CA8BA3 /* VirtualGameController.xcconfig */,
+				87E2B0F66E2F7A4F1C1531CB169253AC /* VirtualGameController-dummy.m */,
+				6B9F8C786316F9C051726B8CBBFCC141 /* VirtualGameController-prefix.pch */,
+				B2A38C32CFCEA8993974BBF409F72138 /* VirtualGameController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VirtualGameController";
+			sourceTree = "<group>";
+		};
+		AB78E840513010E9CC652844D74BE90D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				693704453F3E46E72F37F54F7CE627A4 /* VirtualGameController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9323738A863F46B174BE3EA5EBD5D73 /* Pods-MyNotePhone */ = {
+			isa = PBXGroup;
+			children = (
+				8656CC3A5974FD8B127F43179EC7EBF0 /* Info.plist */,
+				6599D4826A5DC14550349DAD1506FE2B /* Pods-MyNotePhone.modulemap */,
+				0DCDFD10FCE4AF6751B06831688D58AB /* Pods-MyNotePhone-acknowledgements.markdown */,
+				A18D8382752890968C2C8E1994359833 /* Pods-MyNotePhone-acknowledgements.plist */,
+				AC88C925289C2C1449140AB981D151D2 /* Pods-MyNotePhone-dummy.m */,
+				A27E3D53C0BA864B7B4CBB1155D9BA91 /* Pods-MyNotePhone-frameworks.sh */,
+				D4ED87576F8D9043ADE407020EE3DB58 /* Pods-MyNotePhone-resources.sh */,
+				A6985B4A743798ADDD9EAD5536488A74 /* Pods-MyNotePhone-umbrella.h */,
+				239FF4E4A6C39B643B6D390212A9BA4D /* Pods-MyNotePhone.debug.xcconfig */,
+				AE5269E4DE743885385E27F3D0D12EB0 /* Pods-MyNotePhone.release.xcconfig */,
+			);
+			name = "Pods-MyNotePhone";
+			path = "Target Support Files/Pods-MyNotePhone";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC9D3080D00B5F5EA79B0B5139788299 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430591885DD12588A870FBBB3139D58A /* Pods_MyNotePhone.framework */,
+				8F6D3F06007743431B654C9E871A3228 /* VirtualGameController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6BE0FBE12426B3D92F9113C4B883D46A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B840D5225E6A878C74654938AF7224B5 /* VirtualGameController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFEDA8D192758108640CD67BC446B75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47C12E27E9E40B1C125D87AB234B9FB5 /* Pods-MyNotePhone-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8856C61260D23E4550AFB4E2608F2FD9 /* VirtualGameController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A34B77C8BFF5A791EC004E2D022832 /* Build configuration list for PBXNativeTarget "VirtualGameController" */;
+			buildPhases = (
+				CD3D447C58BCB36BA74ADA0DF0073E38 /* Sources */,
+				47D0B0570CE2A4D712FD0EDCC3D45D90 /* Frameworks */,
+				6BE0FBE12426B3D92F9113C4B883D46A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualGameController;
+			productName = VirtualGameController;
+			productReference = 8F6D3F06007743431B654C9E871A3228 /* VirtualGameController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9501A13C9A34DE016AF19562EF2735FC /* Pods-MyNotePhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47E16F1785299078B8E58CEF99D9422C /* Build configuration list for PBXNativeTarget "Pods-MyNotePhone" */;
+			buildPhases = (
+				1844C86FCDAF253B9193CA5E5E5D69D1 /* Sources */,
+				8C9BBFB25CD2817EE8A3E18BCAC9BC1C /* Frameworks */,
+				EDFEDA8D192758108640CD67BC446B75 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80882FC2564569324551D9298EB487FF /* PBXTargetDependency */,
+			);
+			name = "Pods-MyNotePhone";
+			productName = "Pods-MyNotePhone";
+			productReference = 430591885DD12588A870FBBB3139D58A /* Pods_MyNotePhone.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DC9D3080D00B5F5EA79B0B5139788299 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9501A13C9A34DE016AF19562EF2735FC /* Pods-MyNotePhone */,
+				8856C61260D23E4550AFB4E2608F2FD9 /* VirtualGameController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1844C86FCDAF253B9193CA5E5E5D69D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56EF300B9335614F937AE36C1C9863D6 /* Pods-MyNotePhone-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3D447C58BCB36BA74ADA0DF0073E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68052DC8924E1FF79F7F19418E5BF58 /* VgcBrowser.swift in Sources */,
+				18001FA2611094A9F2844E3DA13D4FC1 /* VgcCentralPublisher.swift in Sources */,
+				C8595D3A26178F0A0389C36FD6E3CEC3 /* VgcCentralViewController.swift in Sources */,
+				1BE27B10DF3CFCDE6058738DA83C442C /* VgcController.swift in Sources */,
+				EFF339255DE5B25FEBB9994C97A1E58D /* VgcCustomElements.swift in Sources */,
+				3B25CBD7BFF583FC91B3754AA703BE8D /* VgcCustomMappings.swift in Sources */,
+				9BF3B0FF6C794ED9797D8967EB770371 /* VgcElements.swift in Sources */,
+				8F14000DB9F606DF93809F05715760D2 /* VgcIcadePeripheral.swift in Sources */,
+				6A997985DE7FA7EAB0D08537F60B022C /* VgcLogger.swift in Sources */,
+				525D23D438ABDFB6DC5FA73F86740D1D /* VgcManager.swift in Sources */,
+				61D025DD40A63A7EA16636B61AE3D832 /* VgcMotion.swift in Sources */,
+				ABA592C7B397C027EB0962DB6602CE20 /* VgcPeripheral.swift in Sources */,
+				B7D58E29AD4BFF66BF0454C87ABBEDBF /* VgcPeripheralSetup.swift in Sources */,
+				8F49E566C8C6F5B13D2607F8FA607CA2 /* VgcSharedViews.swift in Sources */,
+				B622A8805172FA8B4C9271735C8997C9 /* VgcStreamer.swift in Sources */,
+				A4342783C2CFBA987D7F3E35F93BD8D2 /* VgcWatch.swift in Sources */,
+				60F31C54E1D4CAAEDCBF2CB4548B6207 /* VgcWatchConnectivity.swift in Sources */,
+				E2FB34874E77988A064F1C14A9E6D692 /* VirtualGameController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80882FC2564569324551D9298EB487FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VirtualGameController;
+			target = 8856C61260D23E4550AFB4E2608F2FD9 /* VirtualGameController */;
+			targetProxy = C5404B94EA8BA7CE4EB3BB32569B760F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18F5CF38DC5529586066F76D829F555D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE5269E4DE743885385E27F3D0D12EB0 /* Pods-MyNotePhone.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNotePhone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyNotePhone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		356689FC4E19388D3260DF9604AF8A70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C3B7D9298E956A8D3EEDCE8480DD800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		7D0FAD0BB234BC0D99BB9362D9BDFE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239FF4E4A6C39B643B6D390212A9BA4D /* Pods-MyNotePhone.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MyNotePhone/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MyNotePhone;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ACEA73C5B22BCC8435ED3CCFB8443F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909859663E0185F4A9EAA3CB21CA8BA3 /* VirtualGameController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VirtualGameController/VirtualGameController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirtualGameController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirtualGameController/VirtualGameController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = VirtualGameController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C13BEAD1ADEE57453A4EA08C09F6C653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909859663E0185F4A9EAA3CB21CA8BA3 /* VirtualGameController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/VirtualGameController/VirtualGameController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VirtualGameController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VirtualGameController/VirtualGameController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = VirtualGameController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C3B7D9298E956A8D3EEDCE8480DD800 /* Debug */,
+				356689FC4E19388D3260DF9604AF8A70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47E16F1785299078B8E58CEF99D9422C /* Build configuration list for PBXNativeTarget "Pods-MyNotePhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D0FAD0BB234BC0D99BB9362D9BDFE7F /* Debug */,
+				18F5CF38DC5529586066F76D829F555D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A34B77C8BFF5A791EC004E2D022832 /* Build configuration list for PBXNativeTarget "VirtualGameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACEA73C5B22BCC8435ED3CCFB8443F6A /* Debug */,
+				C13BEAD1ADEE57453A4EA08C09F6C653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
