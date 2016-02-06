@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17509F74944D9A450E7A6A46 /* Pods_MyNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AE25CA118FB4823F545734 /* Pods_MyNote.framework */; };
 		43009D501C669BE3005C6664 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009D4F1C669BE3005C6664 /* AppDelegate.swift */; };
 		43009D521C669BE3005C6664 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43009D511C669BE3005C6664 /* ViewController.swift */; };
 		43009D551C669BE3005C6664 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43009D531C669BE3005C6664 /* Main.storyboard */; };
@@ -41,7 +42,10 @@
 		43898E741C667F0B0043BB90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		43898E771C667F920043BB90 /* MyNote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyNote-Bridging-Header.h"; sourceTree = "<group>"; };
 		43898E791C6680FC0043BB90 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		68AE25CA118FB4823F545734 /* Pods_MyNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8467A682568B4EE1D963B14C /* Pods-MyNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNote/Pods-MyNote.debug.xcconfig"; sourceTree = "<group>"; };
 		A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotePhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.debug.xcconfig"; sourceTree = "<group>"; };
+		C9B27AE83D015D64D46B3992 /* Pods-MyNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyNote/Pods-MyNote.release.xcconfig"; sourceTree = "<group>"; };
 		E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNotePhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,7 @@
 				43898E7A1C6680FC0043BB90 /* MyoKit.framework in Frameworks */,
 				43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */,
 				43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */,
+				17509F74944D9A450E7A6A46 /* Pods_MyNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +126,8 @@
 			children = (
 				A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */,
 				33202939592BCF7DF4EBEB8C /* Pods-MyNotePhone.release.xcconfig */,
+				8467A682568B4EE1D963B14C /* Pods-MyNote.debug.xcconfig */,
+				C9B27AE83D015D64D46B3992 /* Pods-MyNote.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -129,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */,
+				68AE25CA118FB4823F545734 /* Pods_MyNote.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43898E461C66706D0043BB90 /* Build configuration list for PBXNativeTarget "MyNote" */;
 			buildPhases = (
+				E1645539742B11323CAC6246 /* Check Pods Manifest.lock */,
 				43898E331C66706D0043BB90 /* Sources */,
 				43898E341C66706D0043BB90 /* Frameworks */,
 				43898E351C66706D0043BB90 /* Resources */,
+				14A7555BDAC5559B9163E18B /* Embed Pods Frameworks */,
+				A663848651EEE5E543F096F5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +274,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		14A7555BDAC5559B9163E18B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNote/Pods-MyNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A663848651EEE5E543F096F5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNote/Pods-MyNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B84890AA8B8E0662873A5A58 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +317,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1645539742B11323CAC6246 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,6 +508,7 @@
 		};
 		43898E471C66706D0043BB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8467A682568B4EE1D963B14C /* Pods-MyNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -469,6 +526,7 @@
 		};
 		43898E481C66706D0043BB90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B27AE83D015D64D46B3992 /* Pods-MyNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

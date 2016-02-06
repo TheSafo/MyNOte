@@ -7,3 +7,5 @@
 //
 
 //#import <MyoKit/MyoKit.h>
+
+#define kAppKey "MyNote"

@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-MyNotePhone.xcscheme</key>
+		<key>Pods-MyNote-VirtualGameController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>VirtualGameController.xcscheme</key>
+		<key>Pods-MyNote.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MyNotePhone-VirtualGameController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MyNotePhone.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8856C61260D23E4550AFB4E2608F2FD9</key>
+		<key>20FAD29A2CEF7E58BA025C1A18914124</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9501A13C9A34DE016AF19562EF2735FC</key>
+		<key>4BD251A8438D533266287FD3BFFA1118</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53EB7BDBBD403E24F30844B831752F69</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A287CF2FAE66D659B3FC8BCF5F47ADF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

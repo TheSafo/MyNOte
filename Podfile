@@ -7,3 +7,8 @@ target 'MyNotePhone' do
     platform :ios, '9.0'
     pod 'VirtualGameController'
 end
+
+target 'MyNote' do
+    platform :tvos, '9.1'
+    pod 'VirtualGameController'
+end
