@@ -19,7 +19,10 @@
 		43898E421C66706D0043BB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43898E411C66706D0043BB90 /* Assets.xcassets */; };
 		43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E721C667EED0043BB90 /* CoreBluetooth.framework */; };
 		43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E741C667F0B0043BB90 /* SystemConfiguration.framework */; };
-		43898E7A1C6680FC0043BB90 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E791C6680FC0043BB90 /* MyoKit.framework */; };
+		43EDD2CF1C66BC48001D8E57 /* VgcCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */; };
+		43EDD2D01C66C218001D8E57 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E791C6680FC0043BB90 /* MyoKit.framework */; };
+		43EDD2D21C66C3CC001D8E57 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */; };
+		43EDD2D41C66C3E6001D8E57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EDD2D31C66C3E6001D8E57 /* SystemConfiguration.framework */; };
 		A523D6CCFE5B819C43A855BD /* Pods_MyNotePhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		43898E741C667F0B0043BB90 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		43898E771C667F920043BB90 /* MyNote-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyNote-Bridging-Header.h"; sourceTree = "<group>"; };
 		43898E791C6680FC0043BB90 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyoKit.framework; sourceTree = "<group>"; };
+		43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VgcCustomElements.swift; sourceTree = "<group>"; };
+		43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
+		43EDD2D31C66C3E6001D8E57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		68AE25CA118FB4823F545734 /* Pods_MyNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467A682568B4EE1D963B14C /* Pods-MyNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNote/Pods-MyNote.debug.xcconfig"; sourceTree = "<group>"; };
 		A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotePhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -54,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EDD2D41C66C3E6001D8E57 /* SystemConfiguration.framework in Frameworks */,
+				43EDD2D21C66C3CC001D8E57 /* CoreBluetooth.framework in Frameworks */,
+				43EDD2D01C66C218001D8E57 /* MyoKit.framework in Frameworks */,
 				A523D6CCFE5B819C43A855BD /* Pods_MyNotePhone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,7 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43898E7A1C6680FC0043BB90 /* MyoKit.framework in Frameworks */,
 				43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */,
 				43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */,
 				17509F74944D9A450E7A6A46 /* Pods_MyNote.framework in Frameworks */,
@@ -77,6 +85,7 @@
 			children = (
 				43009D4F1C669BE3005C6664 /* AppDelegate.swift */,
 				43009D511C669BE3005C6664 /* ViewController.swift */,
+				43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */,
 				43009D531C669BE3005C6664 /* Main.storyboard */,
 				43009D561C669BE3005C6664 /* Assets.xcassets */,
 				43009D581C669BE3005C6664 /* LaunchScreen.storyboard */,
@@ -135,6 +144,8 @@
 		F0ABC78B38B84CD5B9E748F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43EDD2D31C66C3E6001D8E57 /* SystemConfiguration.framework */,
+				43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */,
 				E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */,
 				68AE25CA118FB4823F545734 /* Pods_MyNote.framework */,
 			);
@@ -343,6 +354,7 @@
 			files = (
 				43009D521C669BE3005C6664 /* ViewController.swift in Sources */,
 				43009D501C669BE3005C6664 /* AppDelegate.swift in Sources */,
+				43EDD2CF1C66BC48001D8E57 /* VgcCustomElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -401,6 +414,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNotePhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -411,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -421,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNotePhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -520,7 +536,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -538,7 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.JakeSafo.MyNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MyNote-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
