@@ -100,7 +100,7 @@ class ViewController: UIViewController {
             let quat = typedEvent.quaternion
             let eulers = TLMEulerAngles(quaternion: quat)
             
-            let CalibrationYaw = 90.0
+            let CalibrationYaw = -90.0
             let CalibrationPitch = 0.0
             //pitch defines y, yaw defines x
             let MaxYawChange = 60.0
@@ -127,8 +127,8 @@ class ViewController: UIViewController {
                 CurrentPitch = -MaxPitchChange+CalibrationPitch
             }
             
-            var x = 50.0 - 50.0*(CurrentYaw-CalibrationYaw)/MaxYawChange
-            let y = 50.0 - 50.0*(CurrentPitch-CalibrationPitch)/MaxPitchChange
+            var x = 50.0 - 50.0*((CurrentYaw-CalibrationYaw)%360)/MaxYawChange
+            let y = 50.0 - 50.0*((CurrentPitch-CalibrationPitch)%360)/MaxPitchChange
             
 
 //            NSLog("Got x,y : %f, %f", x,y)
