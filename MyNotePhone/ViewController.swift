@@ -102,8 +102,32 @@ class ViewController: UIViewController {
             let quat = typedEvent.quaternion
             let eulers = TLMEulerAngles(quaternion: quat)
             
+            let CalibrationYaw = 90.0
+            let CalibrationPitch = 0.0
+            //pitch defines y, yaw defines x
+            let MaxYawChange = 60.0
+            let MaxPitchChange = 45.0
+            
+            var CurrentYaw = eulers.yaw.degrees
+            var CurrentPitch = eulers.pitch.degrees
+            
+            //limit pitch and yaw to +- their max quantities
+            if (CurrentYaw-CalibrationYaw)>MaxYawChange{
+                CurrentYaw = MaxYawChange+CalibrationYaw
+            }
+            if (CurrentYaw-CalibrationYaw) < (-1.0)*MaxYawChange{
+                CurrentYaw = -MaxYawChange+CalibrationYaw
+            }
+            if (CurrentPitch-CalibrationPitch)>MaxPitchChange{
+                CurrentPitch = MaxPitchChange+CalibrationPitch
+            }
+            if (CurrentPitch-CalibrationPitch) < (-1.0)*MaxPitchChange{
+                CurrentPitch = -MaxPitchChange+CalibrationPitch
+            }
+            let x = 50.0 + 50.0*(CurrentYaw-CalibrationYaw)/MaxYawChange
+            let y = 50.0 + 50.0*(CurrentPitch-CalibrationPitch)/MaxPitchChange
 //            let quat = event.quaternion
-//            NSLog("Got orientation change: %@", event.quaternion)
+            NSLog("Got x,y : %f, %f", x,y)
         }
         else
         {
