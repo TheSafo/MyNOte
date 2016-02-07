@@ -6,7 +6,4 @@
 //  Copyright © 2016 Jake Saferstein. All rights reserved.
 //
 
-
-#define kAppKey "MyNote"
-
 #import <MyoKit/MyoKit.h>

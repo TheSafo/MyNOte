@@ -19,6 +19,7 @@
 		43898E421C66706D0043BB90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43898E411C66706D0043BB90 /* Assets.xcassets */; };
 		43898E731C667EED0043BB90 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E721C667EED0043BB90 /* CoreBluetooth.framework */; };
 		43898E751C667F0B0043BB90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E741C667F0B0043BB90 /* SystemConfiguration.framework */; };
+		43C74B991C66EC55004EB5F8 /* VgcCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */; };
 		43EDD2CF1C66BC48001D8E57 /* VgcCustomElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */; };
 		43EDD2D01C66C218001D8E57 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E791C6680FC0043BB90 /* MyoKit.framework */; };
 		43EDD2D21C66C3CC001D8E57 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */; };
@@ -364,6 +365,7 @@
 			files = (
 				43898E3D1C66706D0043BB90 /* ViewController.swift in Sources */,
 				43898E3B1C66706D0043BB90 /* AppDelegate.swift in Sources */,
+				43C74B991C66EC55004EB5F8 /* VgcCustomElements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,14 +13,12 @@ import VirtualGameController
 class ViewController: UIViewController {
     
     var textView : UILabel! = UILabel()
+    var ctrlr : VgcController?
+    var pointerVw : UIView = UIView()
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
         textView.text = "The most meme-worthy blackboard"
         textView.font =  UIFont.systemFontOfSize(100)
         textView.adjustsFontSizeToFitWidth = true
@@ -28,8 +26,13 @@ class ViewController: UIViewController {
         textView.frame = self.view.bounds
         self.view.addSubview(textView)
         
-        VgcManager.startAs(.Central, appIdentifier: "MyNote")
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "controllerConnected", name:GCControllerDidConnectNotification, object: nil);
+        pointerVw.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        pointerVw.backgroundColor = UIColor.redColor()
+        self.view.addSubview(pointerVw)
+        
+        VgcManager.startAs(.Central, appIdentifier: "vgc", customElements: CustomElements(), customMappings: CustomMappings(), includesPeerToPeer: true)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "controllerConnected:", name:GCControllerDidConnectNotification, object: nil);
+        
         VgcController.startWirelessControllerDiscoveryWithCompletionHandler { () -> Void in
 
             if VgcController.controllers().count == 0 {
@@ -38,23 +41,43 @@ class ViewController: UIViewController {
             }
         }
         
-        
-//        [[NSNotificationCenter defaultCenter] addObserver:self
-//            selector:@selector(didReceivePoseChange:)
-//        name:TLMMyoDidReceivePoseChangedNotification
-//        object:nil];
-        
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didReceivePoseChange:", name:TLMMyoDidReceivePoseChangedNotification, object: nil);
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        Elements.customElements.valueChangedHandler = { (controller, element:Element) in
+            
+            if element.identifier == 100
+            {
+                if let val = element.value as? Double
+                {
+                    NSLog("Got a new value for pointer x, value: %f", val)
+                    self.pointerVw.frame = CGRect(x: (CGFloat(val)/100.0) * self.view.frame.size.width, y: self.pointerVw.frame.origin.y, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+                }
+                else
+                {
+                    
+                }
+            }
+            else if element.identifier == 101
+            {
+                if let val = element.value as? Double
+                {
+                    NSLog("Got a new value for pointer y, value: %f", val)
+                    self.pointerVw.frame = CGRect(x: self.pointerVw.frame.origin.x, y: (CGFloat(val)/100.0) * self.view.frame.size.height, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+                }
+                else
+                {
+                    
+                }
+            }
+        }
     }
     
-    func controllerConnected()
+    func receivedPlayerIndex(notif:NSNotification)
     {
-        NSLog("%@", VgcController.controllers().debugDescription)
+        NSLog("Recieved index")
+    }
+
+    func controllerConnected(notif:NSNotification)
+    {
+        NSLog("CONTROLLER CONNECTED CALLED: WITH %i CONTROLLERS", VgcController.controllers().count)
         
         guard let firstCtrlr = VgcController.controllers().first else {
             
@@ -63,16 +86,18 @@ class ViewController: UIViewController {
             return
         }
         
-        firstCtrlr.playerIndex = GCControllerPlayerIndex.Index1
-        NSLog("Got controlller")
-        textView.text = "Got controller"
+        firstCtrlr.playerIndex = GCControllerPlayerIndex.Index2
+        NSLog("Got remote connected")
+        textView.text = "Got remote connected"
+
+        if VgcController.controllers().count > 1
+        {
+            let scndCtrlr = VgcController.controllers()[1]
+            scndCtrlr.playerIndex = GCControllerPlayerIndex.Index1
+            NSLog("Got controlller")
+            textView.text = "Got controller"
+            ctrlr = scndCtrlr
+        }
     }
-//
-//    func didReceivePoseChange()
-//    {
-//        NSLog("Did get pose change")
-//    }
-
-
 }
 

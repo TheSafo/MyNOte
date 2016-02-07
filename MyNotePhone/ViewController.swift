@@ -10,9 +10,8 @@ import UIKit
 import VirtualGameController
 
 class ViewController: UIViewController {
-    
-    var didConnect = false
-    
+        
+    @IBOutlet var debugLbl: UILabel!
     /*
     // Pushing it on an existing navigation controller
     - (void)pushMyoSettings {
@@ -43,27 +42,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        VgcManager.startAs(.Peripheral, appIdentifier: kAppKey, customElements: CustomElements(), customMappings: CustomMappings(), includesPeerToPeer: true)
+        VgcManager.startAs(.Peripheral, appIdentifier: "vgc", customElements: CustomElements(), customMappings: CustomMappings(), includesPeerToPeer: true)
         VgcManager.peripheral.browseForServices()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "foundService", name: VgcPeripheralFoundService, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didRecieveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
         
 
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-//        let ctrlr :TLMSettingsViewController = TLMSettingsViewController()
-//        self.presentViewController(ctrlr, animated: true) { () -> Void in
-//            NSLog("Presented")
-//        }
-        
-//        while !didConnect
-//        {
-//            TLMHub.sharedHub().attachToAdjacent()
-//            NSLog("Tried to attach")
-//            sleep(5)
-//        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -90,8 +75,6 @@ class ViewController: UIViewController {
 
     func didRecieveOrientationEvent(notif : NSNotification)
     {
-        didConnect = true
-        
         guard let event = notif.userInfo![kTLMKeyOrientationEvent] else
         {
             return
@@ -112,22 +95,38 @@ class ViewController: UIViewController {
             var CurrentPitch = eulers.pitch.degrees
             
             //limit pitch and yaw to +- their max quantities
-            if (CurrentYaw-CalibrationYaw)>MaxYawChange{
+            if (CurrentYaw - CalibrationYaw) > MaxYawChange
+            {
                 CurrentYaw = MaxYawChange+CalibrationYaw
             }
-            if (CurrentYaw-CalibrationYaw) < (-1.0)*MaxYawChange{
+            if (CurrentYaw - CalibrationYaw) < (-1.0)*MaxYawChange
+            {
                 CurrentYaw = -MaxYawChange+CalibrationYaw
             }
-            if (CurrentPitch-CalibrationPitch)>MaxPitchChange{
+            if (CurrentPitch-CalibrationPitch) > MaxPitchChange
+            {
                 CurrentPitch = MaxPitchChange+CalibrationPitch
             }
-            if (CurrentPitch-CalibrationPitch) < (-1.0)*MaxPitchChange{
+            if (CurrentPitch-CalibrationPitch) < (-1.0)*MaxPitchChange
+            {
                 CurrentPitch = -MaxPitchChange+CalibrationPitch
             }
-            let x = 50.0 + 50.0*(CurrentYaw-CalibrationYaw)/MaxYawChange
-            let y = 50.0 + 50.0*(CurrentPitch-CalibrationPitch)/MaxPitchChange
-//            let quat = event.quaternion
+            
+            var x = 50.0 - 50.0*(CurrentYaw-CalibrationYaw)/MaxYawChange
+            let y = 50.0 - 50.0*(CurrentPitch-CalibrationPitch)/MaxPitchChange
+            
+
             NSLog("Got x,y : %f, %f", x,y)
+            debugLbl.text = String(format: "%f, %f", arguments: [x,y])
+            
+            VgcManager.elements.custom[CustomElementType.PointerX.rawValue]?.value = x
+            VgcManager.elements.custom[CustomElementType.PointerY.rawValue]?.value = y
+            
+            let xEle = VgcManager.elements.custom[CustomElementType.PointerX.rawValue]
+            let yEle = VgcManager.elements.custom[CustomElementType.PointerY.rawValue]
+            
+            VgcManager.peripheral.sendElementState(xEle!)
+            VgcManager.peripheral.sendElementState(yEle!)
         }
         else
         {
