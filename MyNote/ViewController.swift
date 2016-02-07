@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     var textView : UILabel! = UILabel()
     var pointerVw : UIView = UIView()
     var drawingVw : UIImageView = UIImageView()
+    var bgVw : UIImageView = UIImageView()
+    var curImg : Int = 1
     
     var ctrlr : VgcController?
     
@@ -39,7 +41,11 @@ class ViewController: UIViewController {
 //        textView.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
 //        textView.frame = self.view.bounds
 //        self.view.addSubview(textView)
-        self.view.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
+//        self.view.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
+        
+        bgVw.frame = self.view.bounds
+        bgVw.image = UIImage(named: String(format: "Slide%i", curImg))
+        self.view .addSubview(bgVw)
         
         drawingVw.frame = self.view.bounds
         drawingVw.backgroundColor = UIColor.clearColor()
@@ -145,6 +151,16 @@ class ViewController: UIViewController {
                     {
                         //TODO: SLIDE SHOW STUFF
                         self.curMode = .PointerMode
+                        
+                        self.curImg++
+                        
+                        if self.curImg > 8
+                        {
+                            self.curImg == 1
+                        }
+                        
+                        self.bgVw.image = UIImage(named: String(format: "Slide%i", self.curImg))
+                        self.drawingVw.image = UIImage()
                     }
                 }
             }

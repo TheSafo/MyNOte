@@ -24,6 +24,14 @@
 		43EDD2D01C66C218001D8E57 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43898E791C6680FC0043BB90 /* MyoKit.framework */; };
 		43EDD2D21C66C3CC001D8E57 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */; };
 		43EDD2D41C66C3E6001D8E57 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43EDD2D31C66C3E6001D8E57 /* SystemConfiguration.framework */; };
+		43FB3B001C6740F50036B90A /* Slide5.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AF81C6740F50036B90A /* Slide5.png */; };
+		43FB3B011C6740F50036B90A /* Slide6.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AF91C6740F50036B90A /* Slide6.png */; };
+		43FB3B021C6740F50036B90A /* Slide7.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFA1C6740F50036B90A /* Slide7.png */; };
+		43FB3B031C6740F50036B90A /* Slide8.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFB1C6740F50036B90A /* Slide8.png */; };
+		43FB3B041C6740F50036B90A /* Slide2.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFC1C6740F50036B90A /* Slide2.png */; };
+		43FB3B051C6740F50036B90A /* Slide3.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFD1C6740F50036B90A /* Slide3.png */; };
+		43FB3B061C6740F50036B90A /* Slide4.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFE1C6740F50036B90A /* Slide4.png */; };
+		43FB3B071C6740F50036B90A /* Slide1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43FB3AFF1C6740F50036B90A /* Slide1.png */; };
 		A523D6CCFE5B819C43A855BD /* Pods_MyNotePhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E341789AB2A27EEF9BB29C2F /* Pods_MyNotePhone.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +57,14 @@
 		43EDD2CE1C66BC48001D8E57 /* VgcCustomElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VgcCustomElements.swift; sourceTree = "<group>"; };
 		43EDD2D11C66C3CC001D8E57 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
 		43EDD2D31C66C3E6001D8E57 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		43FB3AF81C6740F50036B90A /* Slide5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide5.png; sourceTree = "<group>"; };
+		43FB3AF91C6740F50036B90A /* Slide6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide6.png; sourceTree = "<group>"; };
+		43FB3AFA1C6740F50036B90A /* Slide7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide7.png; sourceTree = "<group>"; };
+		43FB3AFB1C6740F50036B90A /* Slide8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide8.png; sourceTree = "<group>"; };
+		43FB3AFC1C6740F50036B90A /* Slide2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide2.png; sourceTree = "<group>"; };
+		43FB3AFD1C6740F50036B90A /* Slide3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide3.png; sourceTree = "<group>"; };
+		43FB3AFE1C6740F50036B90A /* Slide4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide4.png; sourceTree = "<group>"; };
+		43FB3AFF1C6740F50036B90A /* Slide1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slide1.png; sourceTree = "<group>"; };
 		68AE25CA118FB4823F545734 /* Pods_MyNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8467A682568B4EE1D963B14C /* Pods-MyNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNote/Pods-MyNote.debug.xcconfig"; sourceTree = "<group>"; };
 		A005314B546F8D63FB87524E /* Pods-MyNotePhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNotePhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyNotePhone/Pods-MyNotePhone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +138,14 @@
 		43898E391C66706D0043BB90 /* MyNote */ = {
 			isa = PBXGroup;
 			children = (
+				43FB3AFF1C6740F50036B90A /* Slide1.png */,
+				43FB3AFC1C6740F50036B90A /* Slide2.png */,
+				43FB3AFD1C6740F50036B90A /* Slide3.png */,
+				43FB3AFE1C6740F50036B90A /* Slide4.png */,
+				43FB3AF81C6740F50036B90A /* Slide5.png */,
+				43FB3AF91C6740F50036B90A /* Slide6.png */,
+				43FB3AFA1C6740F50036B90A /* Slide7.png */,
+				43FB3AFB1C6740F50036B90A /* Slide8.png */,
 				43898E3A1C66706D0043BB90 /* AppDelegate.swift */,
 				43898E3C1C66706D0043BB90 /* ViewController.swift */,
 				43898E3E1C66706D0043BB90 /* Main.storyboard */,
@@ -248,8 +272,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43FB3B041C6740F50036B90A /* Slide2.png in Resources */,
+				43FB3B051C6740F50036B90A /* Slide3.png in Resources */,
+				43FB3B011C6740F50036B90A /* Slide6.png in Resources */,
+				43FB3B071C6740F50036B90A /* Slide1.png in Resources */,
+				43FB3B061C6740F50036B90A /* Slide4.png in Resources */,
 				43898E421C66706D0043BB90 /* Assets.xcassets in Resources */,
+				43FB3B031C6740F50036B90A /* Slide8.png in Resources */,
 				43898E401C66706D0043BB90 /* Main.storyboard in Resources */,
+				43FB3B021C6740F50036B90A /* Slide7.png in Resources */,
+				43FB3B001C6740F50036B90A /* Slide5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
