@@ -14,10 +14,9 @@ import VirtualGameController
 /// the range shown below (to prevent collisions with the standard elements).
 
 public enum CustomElementType: Int {
-    
-//    case PointerX = 100
-//    case PointerY = 101
+
     case PointerXY = 102
+    case Gesture = 103
 }
 
 ///
@@ -40,9 +39,8 @@ public class CustomElements: CustomElementsSuperclass {
         ///
         
         customProfileElements = [
-//            CustomElement(name: "Pointer X", dataType: .Float, type:CustomElementType.PointerX.rawValue),
-//            CustomElement(name: "Pointer Y", dataType: .Float, type:CustomElementType.PointerY.rawValue)
-            CustomElement(name: "Pointer XY", dataType: .String, type:CustomElementType.PointerXY.rawValue)
+            CustomElement(name: "Pointer XY", dataType: .String, type:CustomElementType.PointerXY.rawValue),
+            CustomElement(name: "Gesture", dataType: ElementDataType.String, type:CustomElementType.Gesture.rawValue)
         ]
         
     }

@@ -22,8 +22,7 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "foundService", name: VgcPeripheralFoundService, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "didRecieveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
-        
-
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didRecievePoseChangeEvent:", name: TLMMyoDidReceivePoseChangedNotification, object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,11 +46,52 @@ class ViewController: UIViewController {
     {
         NSLog("Peripheral connected")
     }
+    
+    func didRecievePoseChangeEvent(notif :NSNotification)
+    {
+        guard let pose = notif.userInfo![kTLMKeyPose] else
+        {
+            NSLog("Memed by a pose change notif")
+            return
+        }
+        
+        if let typedPose = pose as? TLMPose
+        {
+            var toSend:String = ""
+            switch(typedPose.type)
+            {
+                case(TLMPoseType.Rest):
+                    NSLog("Rest")
+                    toSend = "Rest"
+                case(TLMPoseType.Fist):
+                    NSLog("Fist")
+                    toSend = "Fist"
+                case(TLMPoseType.FingersSpread):
+                    NSLog("Fingers spread")
+                    toSend = "FingersSpread"
+                case(TLMPoseType.DoubleTap):
+                    NSLog("Double tap")
+                    toSend = "DoubleTap"
+                default:
+                    NSLog("Ignore")
+                    toSend = "Ignore"
+            }
+            
+            VgcManager.elements.custom[CustomElementType.Gesture.rawValue]?.value = toSend
+            let eleToSend = VgcManager.elements.custom[CustomElementType.Gesture.rawValue]
+            VgcManager.peripheral.sendElementState(eleToSend!)
+        }
+        else
+        {
+            NSLog("Pose couldnt be typed for some weird meme-son")
+        }
+    }
 
     func didRecieveOrientationEvent(notif : NSNotification)
     {
         guard let event = notif.userInfo![kTLMKeyOrientationEvent] else
         {
+            NSLog("Memed by a orientation notif")
             return
         }
         

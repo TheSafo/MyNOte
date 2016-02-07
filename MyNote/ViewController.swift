@@ -12,19 +12,37 @@ import VirtualGameController
 
 class ViewController: UIViewController {
     
+    enum CurrentMode: Int {
+        
+        case PointerMode = 0
+        case DrawMode = 1
+        case EraseMode = 2
+    }
+    
+    let thresh = CGFloat(0.005) //.5% of the screen must be moved to move
+    
     var textView : UILabel! = UILabel()
-    var ctrlr : VgcController?
     var pointerVw : UIView = UIView()
+    var drawingVw : UIImageView = UIImageView()
+    
+    var ctrlr : VgcController?
+    
+    var curMode :CurrentMode = .PointerMode
+    var lastPt : CGPoint = CGPoint(x: 0.0, y: 0.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         textView.text = "The most meme-worthy blackboard"
         textView.font =  UIFont.systemFontOfSize(100)
         textView.adjustsFontSizeToFitWidth = true
         textView.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
         textView.frame = self.view.bounds
         self.view.addSubview(textView)
+        
+        drawingVw.frame = self.view.bounds
+        drawingVw.backgroundColor = UIColor.clearColor()
+        self.view .addSubview(drawingVw)
         
         pointerVw.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
         pointerVw.backgroundColor = UIColor.redColor()
@@ -47,12 +65,74 @@ class ViewController: UIViewController {
             {
                 if let val = element.value as? String
                 {
-                    NSLog("Got new point %@", val)
+//                    NSLog("Got new point %@", val)
+                    let w = self.view.frame.size.width
+                    let h = self.view.frame.size.height
                     
                     let xyPercents = CGPointFromString(val)
+                    let curPt = CGPoint(x:(xyPercents.x/100.0) * w, y: (xyPercents.y/100.0) * h)
                     
-                    self.pointerVw.frame = CGRect(x: (xyPercents.x/100.0) * self.view.frame.size.width, y: (xyPercents.y/100.0) * self.view.frame.size.height,
-                        width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+                    let maxX = self.lastPt.x + (self.thresh * w)
+                    let minX = self.lastPt.x - (self.thresh * w)
+                    let maxY = self.lastPt.y + (self.thresh * h)
+                    let minY = self.lastPt.y - (self.thresh * h)
+                    
+                    if (curPt.x > minX && curPt.x < maxX) && (curPt.y > minY && curPt.y < maxY)
+                    {
+//                        NSLog("Too little movement since last point")
+                        return
+                    }
+                    
+                    self.pointerVw.frame = CGRect(x: curPt.x, y: curPt.y, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+                    
+                    if self.curMode == .DrawMode
+                    {
+                        NSLog("Drawing")
+                        UIGraphicsBeginImageContext(self.drawingVw.frame.size);
+                        self.drawingVw.image?.drawInRect(CGRect(x: 0, y: 0, width: self.drawingVw.bounds.size.width, height: self.drawingVw.bounds.size.height))
+                        CGContextMoveToPoint(UIGraphicsGetCurrentContext(), self.lastPt.x, self.lastPt.y);
+                        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
+//                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
+                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 25);
+                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 5/255, 5/255, 5/255, 1.0);
+//                        CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
+//                        
+                        CGContextStrokePath(UIGraphicsGetCurrentContext());
+                        self.drawingVw.image = UIGraphicsGetImageFromCurrentImageContext();
+//                        [self.tempDrawImage setAlpha:opacity];
+                        UIGraphicsEndImageContext();
+                    }
+                    else if self.curMode == .EraseMode
+                    {
+                        
+                    }
+                    
+                    self.lastPt = curPt
+                }
+            }
+            else if element.identifier == 103
+            {
+                if let val = element.value as? String
+                {
+                    NSLog("Got pose update to %@", val)
+                    
+                    if val == "Rest"
+                    {
+                        self.curMode = .PointerMode
+                    }
+                    else if val == "Fist"
+                    {
+                        self.curMode = .DrawMode
+                    }
+                    else if val == "FingersSpread"
+                    {
+                        self.curMode = .EraseMode
+                    }
+                    else if val == "DoubleTap"
+                    {
+                        //TODO: SLIDE SHOW STUFF
+                        self.curMode = .PointerMode
+                    }
                 }
             }
         }
