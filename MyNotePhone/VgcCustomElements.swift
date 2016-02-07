@@ -15,8 +15,9 @@ import VirtualGameController
 
 public enum CustomElementType: Int {
     
-    case PointerX = 100
-    case PointerY = 101
+//    case PointerX = 100
+//    case PointerY = 101
+    case PointerXY = 102
 }
 
 ///
@@ -39,8 +40,9 @@ public class CustomElements: CustomElementsSuperclass {
         ///
         
         customProfileElements = [
-            CustomElement(name: "Pointer X", dataType: .Float, type:CustomElementType.PointerX.rawValue),
-            CustomElement(name: "Pointer Y", dataType: .Float, type:CustomElementType.PointerY.rawValue)
+//            CustomElement(name: "Pointer X", dataType: .Float, type:CustomElementType.PointerX.rawValue),
+//            CustomElement(name: "Pointer Y", dataType: .Float, type:CustomElementType.PointerY.rawValue)
+            CustomElement(name: "Pointer XY", dataType: .String, type:CustomElementType.PointerXY.rawValue)
         ]
         
     }

@@ -119,14 +119,12 @@ class ViewController: UIViewController {
             NSLog("Got x,y : %f, %f", x,y)
             debugLbl.text = String(format: "%f, %f", arguments: [x,y])
             
-            VgcManager.elements.custom[CustomElementType.PointerX.rawValue]?.value = x
-            VgcManager.elements.custom[CustomElementType.PointerY.rawValue]?.value = y
+            let pointXY = CGPoint(x: x, y: y)
+            let toSend = NSStringFromCGPoint(pointXY)
             
-            let xEle = VgcManager.elements.custom[CustomElementType.PointerX.rawValue]
-            let yEle = VgcManager.elements.custom[CustomElementType.PointerY.rawValue]
-            
-            VgcManager.peripheral.sendElementState(xEle!)
-            VgcManager.peripheral.sendElementState(yEle!)
+            VgcManager.elements.custom[CustomElementType.PointerXY.rawValue]?.value = toSend
+            let eleToSend = VgcManager.elements.custom[CustomElementType.PointerXY.rawValue]
+            VgcManager.peripheral.sendElementState(eleToSend!)
         }
         else
         {

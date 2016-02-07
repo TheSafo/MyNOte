@@ -43,30 +43,42 @@ class ViewController: UIViewController {
         
         Elements.customElements.valueChangedHandler = { (controller, element:Element) in
             
-            if element.identifier == 100
+            if element.identifier == 102
             {
-                if let val = element.value as? Double
+                if let val = element.value as? String
                 {
-                    NSLog("Got a new value for pointer x, value: %f", val)
-                    self.pointerVw.frame = CGRect(x: (CGFloat(val)/100.0) * self.view.frame.size.width, y: self.pointerVw.frame.origin.y, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
-                }
-                else
-                {
+                    NSLog("Got new point %@", val)
                     
+                    let xyPercents = CGPointFromString(val)
+                    
+                    self.pointerVw.frame = CGRect(x: (xyPercents.x/100.0) * self.view.frame.size.width, y: (xyPercents.y/100.0) * self.view.frame.size.height,
+                        width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
                 }
             }
-            else if element.identifier == 101
-            {
-                if let val = element.value as? Double
-                {
-                    NSLog("Got a new value for pointer y, value: %f", val)
-                    self.pointerVw.frame = CGRect(x: self.pointerVw.frame.origin.x, y: (CGFloat(val)/100.0) * self.view.frame.size.height, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
-                }
-                else
-                {
-                    
-                }
-            }
+//            if element.identifier == 100
+//            {
+//                if let val = element.value as? Double
+//                {
+//                    NSLog("Got a new value for pointer x, value: %f", val)
+//                    self.pointerVw.frame = CGRect(x: (CGFloat(val)/100.0) * self.view.frame.size.width, y: self.pointerVw.frame.origin.y, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+//                }
+//                else
+//                {
+//                    
+//                }
+//            }
+//            else if element.identifier == 101
+//            {
+//                if let val = element.value as? Double
+//                {
+//                    NSLog("Got a new value for pointer y, value: %f", val)
+//                    self.pointerVw.frame = CGRect(x: self.pointerVw.frame.origin.x, y: (CGFloat(val)/100.0) * self.view.frame.size.height, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
+//                }
+//                else
+//                {
+//                    
+//                }
+//            }
         }
     }
     
