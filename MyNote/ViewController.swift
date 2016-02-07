@@ -33,12 +33,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        textView.text = "The most meme-worthy blackboard"
-        textView.font =  UIFont.systemFontOfSize(100)
-        textView.adjustsFontSizeToFitWidth = true
-        textView.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
-        textView.frame = self.view.bounds
-        self.view.addSubview(textView)
+//        textView.text = "The most meme-worthy blackboard"
+//        textView.font =  UIFont.systemFontOfSize(100)
+//        textView.adjustsFontSizeToFitWidth = true
+//        textView.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
+//        textView.frame = self.view.bounds
+//        self.view.addSubview(textView)
+        self.view.backgroundColor = UIColor(red: 59/255, green: 101/255, blue: 61/255, alpha: 1)
         
         drawingVw.frame = self.view.bounds
         drawingVw.backgroundColor = UIColor.clearColor()
@@ -94,7 +95,7 @@ class ViewController: UIViewController {
                         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
 //                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
                         CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 25);
-                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 5/255, 5/255, 5/255, 1.0);
+                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0/255, 0/255, 0/255, 1.0);
 //                        CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
 //                        
                         CGContextStrokePath(UIGraphicsGetCurrentContext());
@@ -104,7 +105,20 @@ class ViewController: UIViewController {
                     }
                     else if self.curMode == .EraseMode
                     {
-                        
+                        NSLog("Erase")
+                        UIGraphicsBeginImageContext(self.drawingVw.frame.size);
+                        self.drawingVw.image?.drawInRect(CGRect(x: 0, y: 0, width: self.drawingVw.bounds.size.width, height: self.drawingVw.bounds.size.height))
+                        CGContextMoveToPoint(UIGraphicsGetCurrentContext(), self.lastPt.x, self.lastPt.y);
+                        CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
+                        //                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
+                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 25);
+                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 59/255, 101/255, 61/255, 1.0);
+                        //                        CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
+                        //
+                        CGContextStrokePath(UIGraphicsGetCurrentContext());
+                        self.drawingVw.image = UIGraphicsGetImageFromCurrentImageContext();
+                        //                        [self.tempDrawImage setAlpha:opacity];
+                        UIGraphicsEndImageContext();
                     }
                     
                     self.lastPt = curPt

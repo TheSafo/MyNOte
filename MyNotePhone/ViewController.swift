@@ -131,7 +131,7 @@ class ViewController: UIViewController {
             let y = 50.0 - 50.0*(CurrentPitch-CalibrationPitch)/MaxPitchChange
             
 
-            NSLog("Got x,y : %f, %f", x,y)
+//            NSLog("Got x,y : %f, %f", x,y)
             debugLbl.text = String(format: "%f, %f", arguments: [x,y])
             
             let pointXY = CGPoint(x: x, y: y)
