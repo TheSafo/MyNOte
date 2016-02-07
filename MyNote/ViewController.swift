@@ -52,6 +52,8 @@ class ViewController: UIViewController {
         self.view .addSubview(drawingVw)
         
         pointerVw.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
+        pointerVw.layer.cornerRadius = 12.5
+        pointerVw.clipsToBounds = true
         pointerVw.backgroundColor = UIColor.redColor()
         self.view.addSubview(pointerVw)
         
@@ -99,7 +101,7 @@ class ViewController: UIViewController {
                         self.drawingVw.image?.drawInRect(CGRect(x: 0, y: 0, width: self.drawingVw.bounds.size.width, height: self.drawingVw.bounds.size.height))
                         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), self.lastPt.x, self.lastPt.y);
                         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
-//                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
+                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCap.Round);
                         CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 25);
                         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0/255, 0/255, 0/255, 1.0);
 //                        CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
@@ -116,8 +118,8 @@ class ViewController: UIViewController {
                         self.drawingVw.image?.drawInRect(CGRect(x: 0, y: 0, width: self.drawingVw.bounds.size.width, height: self.drawingVw.bounds.size.height))
                         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), self.lastPt.x, self.lastPt.y);
                         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
-                        //                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
-                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 50);
+                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCap.Round);
+                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 100);
                         CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0/255, 0/255, 0/255, 0);
                                                 CGContextSetBlendMode(UIGraphicsGetCurrentContext(), CGBlendMode.Clear);
                         //
