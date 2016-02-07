@@ -55,30 +55,6 @@ class ViewController: UIViewController {
                         width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
                 }
             }
-//            if element.identifier == 100
-//            {
-//                if let val = element.value as? Double
-//                {
-//                    NSLog("Got a new value for pointer x, value: %f", val)
-//                    self.pointerVw.frame = CGRect(x: (CGFloat(val)/100.0) * self.view.frame.size.width, y: self.pointerVw.frame.origin.y, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
-//                }
-//                else
-//                {
-//                    
-//                }
-//            }
-//            else if element.identifier == 101
-//            {
-//                if let val = element.value as? Double
-//                {
-//                    NSLog("Got a new value for pointer y, value: %f", val)
-//                    self.pointerVw.frame = CGRect(x: self.pointerVw.frame.origin.x, y: (CGFloat(val)/100.0) * self.view.frame.size.height, width: self.pointerVw.frame.size.width, height: self.pointerVw.frame.size.height)
-//                }
-//                else
-//                {
-//                    
-//                }
-//            }
         }
     }
     

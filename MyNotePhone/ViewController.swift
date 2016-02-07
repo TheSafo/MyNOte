@@ -12,31 +12,6 @@ import VirtualGameController
 class ViewController: UIViewController {
         
     @IBOutlet var debugLbl: UILabel!
-    /*
-    // Pushing it on an existing navigation controller
-    - (void)pushMyoSettings {
-    TLMSettingsViewController *settings = [[TLMSettingsViewController alloc] init];
-    
-    [self.navigationController pushViewController:settings animated:YES];
-    }
-    
-    // Presenting modally
-    - (void)modalPresentMyoSettings {
-    UINavigationController *settings = [TLMSettingsViewController settingsInNavigationController];
-    
-    [self presentViewController:settings animated:YES completion:nil];
-    }
-    
-    // Presenting in a Popover (iPad only)
-    - (void)popoverPresentMyoSettings {
-    // Make sure to hold a strong reference to your popover so it doesn't get dealloc'ed when it's presented.
-    self.popover = [TLMSettingsViewController settingsInPopoverController];
-    
-    [self.popover presentPopoverFromBarButtonItem:settingsButton
-    permittedArrowDirections:UIPopoverArrowDirectionAny
-    animated:YES];
-    }
-*/
 
     override func viewDidLoad() {
         super.viewDidLoad()
