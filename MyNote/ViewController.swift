@@ -111,13 +111,12 @@ class ViewController: UIViewController {
                         CGContextMoveToPoint(UIGraphicsGetCurrentContext(), self.lastPt.x, self.lastPt.y);
                         CGContextAddLineToPoint(UIGraphicsGetCurrentContext(), curPt.x, curPt.y);
                         //                        CGContextSetLineCap(UIGraphicsGetCurrentContext(), CGLineCapRound);
-                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 25);
-                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 59/255, 101/255, 61/255, 1.0);
-                        //                        CGContextSetBlendMode(UIGraphicsGetCurrentContext(),kCGBlendModeNormal);
+                        CGContextSetLineWidth(UIGraphicsGetCurrentContext(), 50);
+                        CGContextSetRGBStrokeColor(UIGraphicsGetCurrentContext(), 0/255, 0/255, 0/255, 0);
+                                                CGContextSetBlendMode(UIGraphicsGetCurrentContext(), CGBlendMode.Clear);
                         //
                         CGContextStrokePath(UIGraphicsGetCurrentContext());
                         self.drawingVw.image = UIGraphicsGetImageFromCurrentImageContext();
-                        //                        [self.tempDrawImage setAlpha:opacity];
                         UIGraphicsEndImageContext();
                     }
                     
