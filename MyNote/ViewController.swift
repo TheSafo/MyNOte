@@ -156,7 +156,7 @@ class ViewController: UIViewController {
                         
                         if self.curImg > 8
                         {
-                            self.curImg == 1
+                            self.curImg = 1
                         }
                         
                         self.bgVw.image = UIImage(named: String(format: "Slide%i", self.curImg))
